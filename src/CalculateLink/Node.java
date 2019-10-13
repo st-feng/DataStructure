@@ -1,19 +1,19 @@
 package CalculateLink;
 
 public class Node {
-    Object data;
-    Node next;
+    public Object data;
+    public Node next;
 
-    Node(){
+    public Node(){
         this.data = null;
         this.next = null;
     }
 
-    Node(Object data){
+    public Node(Object data){
         this.data = data;
     }
 
-    Node(Object data ,Node next){
+    public Node(Object data ,Node next){
         this.data = data;
         this.next = next;
     }

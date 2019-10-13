@@ -1,10 +1,15 @@
 package CalculateLink;
 
 public class LinkForm {
-    Node heap = new Node();
+    public Node heap = new Node();
     int formLen = 0 ;
 
     //创捷长度为n的链表
+    public void creat (int n) throws NullPointerException {
+        for (int i=0;i<n ;i++){
+            insert(0,i);
+        }
+    }
     void creat (Object[] arr) throws NullPointerException {
         for (int i=0;i<arr.length ;i++){
             insert(0,arr[i]);
@@ -12,7 +17,7 @@ public class LinkForm {
     }
 
     //在第i个元素之前插入
-    void insert(int i,Object data) throws NullPointerException {
+    protected void insert(int i, Object data) throws NullPointerException {
 
         //检验输入值是否正确
         check(i);
@@ -57,7 +62,7 @@ public class LinkForm {
     }
 
     //search_1 查找第i个元素
-    Node search (int i){
+    public Node search(int i){
 //        //检验输入值是否正确，该方法会自动终止程序
 //        check(i);
 
@@ -78,7 +83,7 @@ public class LinkForm {
     }
 
     //search_2 查找值为y的元素下标
-    void search (Object value){
+    protected void search (Object value){
         Node p = heap.next;  //指向第0个元素
         boolean flag = true;
         int count = 0; //记录查到多少次该元素，若为0则代表元素不存在。
@@ -125,5 +130,6 @@ public class LinkForm {
             System.exit(-1);//退出程序
         }
     }
+
 
 }
