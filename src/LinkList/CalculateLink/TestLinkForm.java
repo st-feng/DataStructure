@@ -1,4 +1,4 @@
-package CalculateLink;
+package LinkList.CalculateLink;
 
 import java.util.Scanner;
 

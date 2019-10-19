@@ -1,4 +1,4 @@
-package CalculateLink;
+package LinkList.CalculateLink;
 
 public class Node {
     public Object data;
