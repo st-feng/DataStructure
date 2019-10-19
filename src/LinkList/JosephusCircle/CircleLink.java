@@ -1,5 +1,5 @@
 package LinkList.JosephusCircle;
-import LinkList.CalculateLink.Node;
+import LinkList.Node;
 
 public class CircleLink {
   int n = 0;  //基数

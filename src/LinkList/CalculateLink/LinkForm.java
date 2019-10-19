@@ -1,5 +1,7 @@
 package LinkList.CalculateLink;
 
+import LinkList.Node;
+
 public class LinkForm {
     public Node heap = new Node();
     int formLen = 0 ;
