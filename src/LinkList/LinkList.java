@@ -53,14 +53,14 @@ public class LinkList implements Ilist {
     Node p = head;
     int count = 0;
     //检验输入值是否合理
-//    if (i>length()){
-//      throw new Exception("输入值超过链表长度");
-//    }else {
+    if (i>length()){
+      throw new Exception("输入值超过链表长度");
+    }else {
       while (count < i){
         p = p.next;
         ++ count;  //先自增计数定位
       }
-//    }
+    }
     return p.data; //返回第i个元素的data
   }
 
