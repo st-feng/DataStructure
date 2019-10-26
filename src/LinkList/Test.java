@@ -3,19 +3,19 @@ package LinkList;
 public class Test {
   public static void main(String[] args) {
     try{
-      LinkList ll = new LinkList(10,true);
-      System.out.println(ll.length());
-      System.out.println(ll.head);
+      System.out.println("创建链表...");
+      LinkList ll = new LinkList(4,false);
+      System.out.println("====创建完成=====");
       ll.display();
-      System.out.println("第5个元素为："+ll.get(5));
-      System.out.println("所查询元素位于链表第"+ll.indexOf(1)+"个位置");
-      ll.remove(6);
-      ll.display();
+//      ll.insert(4,7);
+//      ll.display();
+//      ll.remove(5);
+//      ll.display();
+//      ll.get(4);
+
 
     }catch (Exception e){
       e.printStackTrace();
     }
   }
-
-
 }
